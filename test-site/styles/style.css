@@ -1,0 +1,36 @@
+html{
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}
+
+h1{
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: #00539f;
+	text-shadow: 2px 2px 1px black;
+}
+
+li{
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+html{
+	background-color: #00539f;
+}
+
+body{
+	width: 600px;
+	background-color: #ff9500;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+	border: 5px solid black;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
