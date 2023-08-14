@@ -1,0 +1,153 @@
+/*css reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*css variables*/
+:root{
+	--navbar-height: 60px;
+}
+
+/*navigation bar*/
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+
+/*navigation bar: logo and image*/
+#logo{
+	margin: 15px 30px;
+}
+
+#logo img{
+	height: 70px;
+	margin: 4px 6px;
+}
+
+/*navigation bar: list styling*/
+
+#navbar ul{
+	display: flex;
+}
+
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4;
+}
+
+#navbar ul li{
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+
+#navbar ul li a{
+	color: white;
+	display: block;
+	padding: 4px 16px;
+	border-radius: 25px;
+	text-decoration: none;
+}	
+
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+/*utility classes*/
+.h-primary{
+	font-size: 3.8rem;
+	padding: 12px;
+}
+
+.h-secondary{
+	font-size: 2rem;
+	padding: 12px;
+}
+
+.center{
+	text-align: center;
+}
+
+.btn{
+	padding: 6px 20px;
+	border: 2px solid white;
+	background-color: brown;
+	color: white;
+	margin: 15px; 
+	border-radius: 20px;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/*home section*/
+
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 5px 200px;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+#home::before{
+	content: "";
+	background: url(images/bg-image.jpg);
+	position: absolute;
+	top:0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.8;
+}
+
+#home h1{
+	color: white;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+#home p{
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Playfair Display', serif;
+}
+
+/*services section*/
+
+#services{
+	margin: 30px;
+	display: flex;
+}
+
+#services .box{
+	border: 2px solid brown;
+	padding: 30px;
+	margin: 4px 6px;
+	border-radius: 25px;
+	background-color: #dba297;
+}
+
+#services .box img{
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+
+#services p{ 
+	font-family: 'Playfair Display', serif;
+	font-size: 1rem;
+}
+	
